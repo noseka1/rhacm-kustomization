@@ -9,9 +9,11 @@ RHACM product documentation can be found [here](https://access.redhat.com/docume
 Note that some of the following commands require *cluster-admin* role.
 
 Install RHACM operator:
-
+```
 $ oc apply --kustomize rhacm-operator/base
+```
 
 Deploy a RHACM instance:
-
+```
 $ oc apply --kustomize rhacm-instance/overlays/ha
+```
