@@ -17,3 +17,6 @@ Deploy a RHACM instance:
 ```
 $ oc apply --kustomize rhacm-instance/overlays/ha
 ```
+## Sample Manifests
+
+* https://github.com/redhat-gpte-devopsautomation/rhacm-labs
