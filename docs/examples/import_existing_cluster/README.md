@@ -1,3 +1,5 @@
+# Importing Existing Cluster
+
 Based on the docs [Importing a target managed cluster to the hub cluster](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/manage_cluster/importing-a-target-managed-cluster-to-the-hub-cluster).
 
 ```
