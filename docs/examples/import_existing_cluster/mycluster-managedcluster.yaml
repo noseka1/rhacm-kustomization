@@ -5,7 +5,7 @@ metadata:
     cloud: auto-detect
     vendor: auto-detect
     name: mycluster
-    environment: 'dev'
+    environment: dev
   name: mycluster
 spec:
   hubAcceptsClient: true
