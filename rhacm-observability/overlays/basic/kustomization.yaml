@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 patchesStrategicMerge:
-- open-cluster-management-observability-mco.yaml
+- observability-mco.yaml
 
 bases:
   - ../../base

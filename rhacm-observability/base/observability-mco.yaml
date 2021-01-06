@@ -1,7 +1,7 @@
 apiVersion: observability.open-cluster-management.io/v1beta1
 kind: MultiClusterObservability
 metadata:
-  name: open-cluster-management-observability
+  name: observability
 spec:
   availabilityConfig: High # Available values are High or Basic
   imagePullPolicy: Always
