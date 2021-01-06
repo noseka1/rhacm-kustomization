@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: open-cluster-management-observability
+
+resources:
+- open-cluster-management-observability-ns.yaml
+- open-cluster-management-observability-mco.yaml
+- pull-secret-secret.yaml
+- thanos-object-storage-secret.yaml
