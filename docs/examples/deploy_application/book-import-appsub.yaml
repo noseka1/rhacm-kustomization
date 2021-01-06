@@ -9,7 +9,6 @@ metadata:
   labels:
     app: book-import
   name: book-import
-  namespace: book-import
 spec:
   channel: book-import/book-import
   placement:

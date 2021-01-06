@@ -2,7 +2,6 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
   name: book-import
-  namespace: book-import
 spec:
   type: Git
   pathname: 'https://github.com/jnpacker/book-import-fest2020'
