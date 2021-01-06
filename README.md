@@ -17,6 +17,13 @@ Deploy a RHACM instance:
 ```
 $ oc apply --kustomize rhacm-instance/overlays/ha
 ```
+
+Optionally, deploy Ansible Automation Platform Resource Operator aka [AWX Resource Operator](https://github.com/ansible/awx-resource-operator):
+
+```
+$ oc apply --kustomize awx-resource-operator/base/
+```
+
 ## Sample Manifests
 
 * https://github.com/redhat-gpte-devopsautomation/rhacm-labs
