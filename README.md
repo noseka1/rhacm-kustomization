@@ -35,6 +35,21 @@ To deploy the observability service, issue the command:
 ```
 $ oc apply --kustomize rhacm-observability/overlays/ha
 ```
+## Troubleshooting
+
+Refer to the [Troubleshooting guide](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/troubleshooting/troubleshooting).
+
+Collect debugging data about the currently running Openshift cluster:
+
+```
+$ oc adm must-gather
+```
+
+Collect debugging information specific to Red Hat Advanced Cluster Manager:
+
+```
+$ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.1.0
+```
 
 ## Related links
 
