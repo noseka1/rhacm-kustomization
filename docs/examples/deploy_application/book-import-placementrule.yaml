@@ -1,0 +1,11 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: book-import
+  name: book-import
+  namespace: book-import
+spec:
+  clusterSelector:
+    matchLabels:
+      environment: dev
