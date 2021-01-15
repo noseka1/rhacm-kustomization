@@ -50,6 +50,12 @@ Collect debugging information specific to Red Hat Advanced Cluster Manager:
 ```
 $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.1.0
 ```
+
+## Labs
+
+* https://github.com/open-cluster-management/lab
+* https://github.com/redhat-gpte-devopsautomation/rhacm-labs
+
 ## Examples
 
 * https://github.com/open-cluster-management/demo-subscription-gitops
@@ -62,7 +68,6 @@ $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.
 
 ## Related links
 
-* https://github.com/redhat-gpte-devopsautomation/rhacm-labs
 * https://github.com/open-cluster-management/policy-collection
 * https://github.com/redhat-cop/acm-policies
 * https://github.com/open-cluster-management/demo-subscription-gitops
