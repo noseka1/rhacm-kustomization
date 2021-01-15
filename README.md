@@ -50,6 +50,14 @@ Collect debugging information specific to Red Hat Advanced Cluster Manager:
 ```
 $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.1.0
 ```
+## Examples
+
+* https://github.com/open-cluster-management/multicloud-operators-application/tree/master/examples
+* https://github.com/open-cluster-management/multicloud-operators-channel/tree/master/examples/e2e_channel_all_types_example
+* https://github.com/open-cluster-management/multicloud-operators-deployable/tree/master/examples
+* https://github.com/open-cluster-management/multicloud-operators-foundation/tree/master/examples
+* https://github.com/open-cluster-management/multicloud-operators-subscription/tree/master/examples
+* https://github.com/open-cluster-management/multicloud-operators-subscription-release/tree/master/examples
 
 ## Related links
 
