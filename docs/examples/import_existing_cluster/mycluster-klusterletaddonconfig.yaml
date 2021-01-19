@@ -2,10 +2,9 @@ apiVersion: agent.open-cluster-management.io/v1
 kind: KlusterletAddonConfig
 metadata:
   name: mycluster
-  namespace: mycluster
 spec:
   clusterName: mycluster
-  clusterNamespace: mycluster
+  clusterNamespace: mycluster-managedcluster
   clusterLabels:
     cloud: auto-detect
     vendor: auto-detect
