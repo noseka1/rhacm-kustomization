@@ -4,7 +4,7 @@ metadata:
   name: mycluster
 spec:
   clusterName: mycluster
-  clusterNamespace: mycluster-managedcluster
+  clusterNamespace: mycluster
   clusterLabels:
     cloud: auto-detect
     vendor: auto-detect
