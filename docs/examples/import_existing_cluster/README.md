@@ -14,11 +14,12 @@ $ CLUSTER=mycluster
 Obtain the manifests needed to join a spoke cluster:
 
 ```
-$ oc get secret --namespace $CLUSTER $CLUSTER-import --output jsonpath={.data.crds\\.yaml} | base64 --decode > $CLUSTER-klusterlet-crd.yaml
-```
-
-```
-$ oc get secret --namespace $CLUSTER $CLUSTER-import --output jsonpath={.data.import\\.yaml} | base64 --decode > $CLUSTER-import.yaml
+$ oc extract \
+    secret/$CLUSTER-import \
+    --namespace $CLUSTER \
+    --to - \
+    --keys crds.yaml,import.yaml \
+    > $CLUSTER-manifests.yaml
 ```
 
 Log into the spoke cluster and apply the manifests:
@@ -27,9 +28,9 @@ Log into the spoke cluster and apply the manifests:
 $ oc login <mycluster>
 ```
 
+You may need to run this command twice, as the CRDs may not be instantiated in time:
 ```
-$ oc apply --filename $CLUSTER-klusterlet-crd.yaml
-$ oc apply --filename $CLUSTER-import.yaml
+$ oc apply --filename $CLUSTER-manifests.yaml
 ```
 
 Validate the agent deployment on the target cluster:
