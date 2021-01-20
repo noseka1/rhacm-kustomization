@@ -2,9 +2,16 @@
 
 Based on the docs [Importing a target managed cluster to the hub cluster](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/manage_cluster/importing-a-target-managed-cluster-to-the-hub-cluster).
 
+On the Hub cluster, create the ManagedCluster resources:
+```
+$ oc apply --kustomize .
+```
+
 ```
 $ CLUSTER=mycluster
 ```
+
+Obtain the manifests needed to join a spoke cluster:
 
 ```
 $ oc get secret --namespace $CLUSTER $CLUSTER-import --output jsonpath={.data.crds\\.yaml} | base64 --decode > $CLUSTER-klusterlet-crd.yaml
@@ -13,6 +20,8 @@ $ oc get secret --namespace $CLUSTER $CLUSTER-import --output jsonpath={.data.cr
 ```
 $ oc get secret --namespace $CLUSTER $CLUSTER-import --output jsonpath={.data.import\\.yaml} | base64 --decode > $CLUSTER-import.yaml
 ```
+
+Log into the spoke cluster and apply the manifests:
 
 ```
 $ oc login <mycluster>
