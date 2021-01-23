@@ -1,0 +1,10 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: docker-registry-kustomization
+  namespace: docker-registry-kustomization-appsub
+spec:
+  clusterReplicas: 1
+  clusterSelector:
+    matchLabels:
+      name: mycluster
