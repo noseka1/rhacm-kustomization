@@ -1,0 +1,9 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: image-registry-config
+spec:
+  clusterReplicas: 1
+  clusterSelector:
+    matchLabels:
+      name: mycluster

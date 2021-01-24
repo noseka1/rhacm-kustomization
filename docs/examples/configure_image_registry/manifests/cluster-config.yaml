@@ -1,0 +1,15 @@
+apiVersion: imageregistry.operator.openshift.io/v1
+kind: Config
+metadata:
+  name: cluster
+spec:
+  # Create a route to allow accessing the image registry from outside of OpenShift.
+  defaultRoute: true
+  # Operator will update the registry as configuration resources are updated
+  managementState: Managed
+  # Number of desired image registry pods
+  replicas: 1
+  # Configure persistent storage for the image registry.
+  storage:
+    pvc:
+      claim: registry

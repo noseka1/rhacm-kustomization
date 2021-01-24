@@ -1,0 +1,13 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  annotations:
+    apps.open-cluster-management.io/github-path: docs/examples/configure_image_registry/manifests
+    apps.open-cluster-management.io/reconcile-option: merge
+  name: image-registry-config
+spec:
+  channel: image-registry-config/image-registry-config
+  placement:
+    placementRef:
+      name: image-registry-config
+      kind: PlacementRule
