@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - docker-registry-kustomization-appsub-ns.yaml
 - docker-registry-kustomization-appsub.yaml
+- docker-registry-kustomization-app.yaml
 - docker-registry-kustomization-channel-ns.yaml
 - docker-registry-kustomization-channel.yaml
 - docker-registry-kustomization-placementrule.yaml
