@@ -9,7 +9,3 @@ spec:
   managementState: Managed
   # Number of desired image registry pods
   replicas: 1
-  # Configure persistent storage for the image registry.
-  storage:
-    pvc:
-      claim: registry
