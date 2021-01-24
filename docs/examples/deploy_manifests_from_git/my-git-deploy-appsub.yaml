@@ -5,7 +5,7 @@ metadata:
     apps.open-cluster-management.io/github-path: docs/examples/deploy_manifests_from_git/manifests
   name: my-git-deploy
 spec:
-  channel: my-git-deploy/my-git-deploy
+  channel: my-git-deploy-source/my-git-deploy
   placement:
     placementRef:
       name: my-git-deploy
