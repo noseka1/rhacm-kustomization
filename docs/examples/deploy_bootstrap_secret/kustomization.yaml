@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - mysecret-appsub-ns.yaml
 - mysecret-appsub.yaml
+- mysecret-app.yaml
 - mysecret-channel-ns.yaml
 - mysecret-channel.yaml
 - mysecret-deployable.yaml
