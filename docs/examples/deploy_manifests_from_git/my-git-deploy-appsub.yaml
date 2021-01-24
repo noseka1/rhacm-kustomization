@@ -1,0 +1,10 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: my-git-deploy
+spec:
+  channel: my-git-deploy/my-git-deploy
+  placement:
+    placementRef:
+      name: my-git-deploy
+      kind: PlacementRule
