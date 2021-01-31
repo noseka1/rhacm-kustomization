@@ -28,7 +28,7 @@ Log into the spoke cluster and apply the manifests:
 $ oc login <mycluster>
 ```
 
-You may need to run this command twice, as the CRDs may not be instantiated in time:
+You may need to **run this command twice**, as the CRDs may not be instantiated in time:
 ```
 $ oc apply --filename $CLUSTER-manifests.yaml
 ```
