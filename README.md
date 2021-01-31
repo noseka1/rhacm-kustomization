@@ -37,7 +37,31 @@ $ oc apply --kustomize rhacm-observability/overlays/ha
 ```
 ## Troubleshooting
 
-Refer to the [Troubleshooting guide](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/troubleshooting/troubleshooting).
+Refer to the [Troubleshooting guide](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/troubleshooting/troubleshooting) for ideas on what could have gone wrong. The guide describes typical issues you may encounter.
+
+### Enabling Application Manager verbose logging
+
+Prevent the operators from restoring the klusterlet-addon-appmgr resource configuration:
+
+```
+$ oc scale --replicas 0 -n open-cluster-management-agent deploy klusterlet 
+$ oc scale --replicas 0 -n open-cluster-management-agent deploy klusterlet-work-agent
+$ oc scale --replicas 0 -n open-cluster-management-agent-addon deploy klusterlet-addon-operator
+```
+
+Add `--v=10` parameter to the args of `subscription-controller` container to increase the log level to maximum:
+
+```
+$ oc edit deploy -n open-cluster-management-agent-addon klusterlet-addon-appmgr
+```
+
+Follow the very verbose logs:
+
+```
+$ oc logs -n open-cluster-management-agent-addon -l app=application-manager -c subscription-controller -f
+```
+
+### Collecting debugging data
 
 Collect debugging data about the currently running Openshift cluster:
 
