@@ -18,3 +18,5 @@ spec:
     enabled: true
   iamPolicyController:
     enabled: true
+  # Pin the specific addon version
+  #version: 2.1.2
