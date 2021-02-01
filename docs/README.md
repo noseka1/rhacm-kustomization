@@ -7,7 +7,7 @@ Channel types supported by RHACM:
 * *namespace* - Namespace (namespace channel)
 * *helmrepo* - Helm repositories
 * *objectbucket* - Object storage repositories
-* *git* - Git repositores (supports kustomize)
+* *git* - Git repositores (supports [Kustomize](https://kustomize.io/))
 * *github* - GitHub repositories
 
 Futher info:
