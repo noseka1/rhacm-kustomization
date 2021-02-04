@@ -3,7 +3,6 @@ kind: PlacementRule
 metadata:
   name: image-registry-config
 spec:
-  clusterReplicas: 1
   clusterSelector:
     matchLabels:
       name: mycluster
