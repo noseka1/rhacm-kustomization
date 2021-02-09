@@ -24,7 +24,7 @@ metadata:
 ...
 ```
 
-* Subscription reconcile-option *replace* (update) vs *merge *(patch)
+* Subscription reconcile-option *replace* (update) vs *merge* (patch)
 * Need to validate the deployment using Ansible, bounce the not-fully deployed resources ?
 * It is best practice to create each channel in a unique namespace. However, a Git channel can share a namespace with another type of channel, including Git, Helm, and Object storage. Refer to [Managing application](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/manage_applications/managing-applications).
 * Sample OpenShift configuration manifests available at [openshift-post-install](https://github.com/noseka1/openshift-post-install)
