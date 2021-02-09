@@ -94,6 +94,7 @@ $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.
 ## Full GitOps examples
 
 * https://github.com/PixelJonas/cluster-gitops
+* https://github.com/gnunn-gitops/cluster-config
 
 ## Related links
 
