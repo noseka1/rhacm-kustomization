@@ -11,7 +11,7 @@ $ oc apply --kustomize .
 $ CLUSTER=mycluster
 ```
 
-Obtain the manifests needed to join a spoke cluster:
+Obtain the manifests needed to join the spoke cluster:
 
 ```
 $ oc extract \
