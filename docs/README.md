@@ -8,7 +8,7 @@ Channel types supported by RHACM:
 * *helmrepo* - Helm repositories
 * *objectbucket* - Object storage repositories
 * *git* - Git repositores (supports [Kustomize](https://kustomize.io/))
-* ~~*github* - GitHub repositories (likely deprecated, use *git* intsead)~~
+* ~~*github* - GitHub repositories (likely deprecated, use *git* instead)~~
 
 Futher info:
 
