@@ -1,0 +1,25 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: my-helm-deploy
+spec:
+  channel: my-helm-deploy/my-helm-deploy
+  # Chart name
+  package: kubernetes-external-secrets
+  packageFilter:
+    # Chart version
+    version: 6.3.0
+  placement:
+    placementRef:
+      name: my-helm-deploy
+      kind: PlacementRule
+  packageOverrides:
+  - packageName: kubernetes-external-secrets
+    # Chart release name
+    packageAlias: external-secrets
+    packageOverrides:
+    # Release values
+    - path: spec
+      value:
+        env:
+          LOG_LEVEL: debug

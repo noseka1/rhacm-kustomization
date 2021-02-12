@@ -1,0 +1,7 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: my-helm-deploy
+spec:
+  type: HelmRepo
+  pathname: https://external-secrets.github.io/kubernetes-external-secrets
