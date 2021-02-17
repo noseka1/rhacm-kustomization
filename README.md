@@ -15,7 +15,7 @@ $ oc apply --kustomize rhacm-operator/base
 
 Deploy a RHACM instance:
 ```
-$ oc apply --kustomize rhacm-instance/overlays/ha
+$ oc apply --kustomize rhacm-instance/overlays/basic
 ```
 
 Optionally, deploy Ansible Automation Platform Resource Operator aka [AWX Resource Operator](https://github.com/ansible/awx-resource-operator):
@@ -33,7 +33,7 @@ Review the [rhacm-observability/base](rhacm-observability/base) manifests and mo
 To deploy the observability service, issue the command:
 
 ```
-$ oc apply --kustomize rhacm-observability/overlays/ha
+$ oc apply --kustomize rhacm-observability/overlays/basic
 ```
 ## Troubleshooting
 
