@@ -1,0 +1,10 @@
+apiVersion: agent.open-cluster-management.io/v1
+kind: KlusterletAddonConfig
+metadata:
+  name: local-cluster
+  namespace: local-cluster
+spec:
+  applicationManager:
+    # Enable Argo CD controller.
+    argocdCluster: true
+    enabled: true
