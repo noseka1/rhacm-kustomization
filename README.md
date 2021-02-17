@@ -21,7 +21,7 @@ $ oc apply --kustomize rhacm-instance/overlays/ha
 Optionally, deploy Ansible Automation Platform Resource Operator aka [AWX Resource Operator](https://github.com/ansible/awx-resource-operator):
 
 ```
-$ oc apply --kustomize awx-resource-operator/base/
+$ oc apply --kustomize awx-resource-operator/base
 ```
 
 ## Enabling observability service
