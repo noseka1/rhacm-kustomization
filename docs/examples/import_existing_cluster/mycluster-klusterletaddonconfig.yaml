@@ -10,6 +10,7 @@ spec:
     vendor: auto-detect
   applicationManager:
     enabled: true
+    argocdCluster: true
   policyController:
     enabled: true
   searchCollector:
