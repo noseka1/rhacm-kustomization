@@ -90,6 +90,7 @@ $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.
 * https://github.com/open-cluster-management/multicloud-operators-subscription/tree/master/examples
 * https://github.com/open-cluster-management/multicloud-operators-subscription-release/tree/master/examples
 * https://github.com/openshift/openshift-gitops-examples
+* https://github.com/mdelder/open-cluster-management-examples
 
 ## Full GitOps examples
 
