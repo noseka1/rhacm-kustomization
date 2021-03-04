@@ -101,7 +101,6 @@ $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.
 
 ## Related links
 
-* https://github.com/redhat-edge-computing/blueprint-management-hub
 * https://github.com/open-cluster-management/policy-collection
 * https://github.com/redhat-cop/acm-policies
 * https://github.com/open-cluster-management/demo-subscription-gitops
