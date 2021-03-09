@@ -26,7 +26,7 @@ $ oc apply --kustomize awx-resource-operator/base
 
 ## Enabling observability service
 
-Refer to the [Observing environments](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/observing_environments/observing-environments) docs.
+Refer to the [Observing environments](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/html/observing_environments/observing-environments-intro) docs.
 
 Review the [rhacm-observability/base](rhacm-observability/base) manifests and modify it to suit your needs.
 
@@ -37,7 +37,7 @@ $ oc apply --kustomize rhacm-observability/overlays/basic
 ```
 ## Troubleshooting
 
-Refer to the [Troubleshooting guide](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.1/html/troubleshooting/troubleshooting) for ideas on what could have gone wrong. The guide describes typical issues you may encounter.
+Refer to the [Troubleshooting guide](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.2/html/troubleshooting/troubleshooting) for ideas on what could have gone wrong. The guide describes typical issues you may encounter.
 
 ### Enabling Application Manager verbose logging
 
@@ -72,7 +72,7 @@ $ oc adm must-gather
 Collect debugging information specific to Red Hat Advanced Cluster Manager:
 
 ```
-$ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.1.0
+$ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.2.0
 ```
 
 ## Labs
