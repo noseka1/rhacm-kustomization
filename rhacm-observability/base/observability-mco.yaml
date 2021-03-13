@@ -3,7 +3,7 @@ kind: MultiClusterObservability
 metadata:
   name: observability
 spec:
-  availabilityConfig: High # Available values are High or Basic
+  availabilityConfig: Basic # Available values are High or Basic
   imagePullPolicy: Always
   imagePullSecret: pull-secret
   observabilityAddonSpec: # The ObservabilityAddonSpec defines the global settings for all managed clusters which have observability add-on enabled
@@ -17,4 +17,3 @@ spec:
       name: thanos-object-storage
       key: thanos.yaml
     statefulSetSize: 10Gi # The amount of storage applied to the Observability stateful sets, i.e. Amazon S3 store, Rule, compact and receiver.
-    statefulSetStorageClass: gp2
