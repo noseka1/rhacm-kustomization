@@ -1,0 +1,13 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: my-git-deploy
+spec:
+  type: Git
+  pathname: https://github.com/noseka1/private-test
+  # Refer to a secret that includes git repo credentials. This secret must
+  # exist in the same namespace as this Channel object.
+  secretRef:
+    apiVersion: v1
+    kind: Secret
+    name: my-git-deploy-credentials
