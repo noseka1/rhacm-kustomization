@@ -9,13 +9,21 @@ RHACM product documentation can be found [here](https://access.redhat.com/docume
 Note that some of the following commands require *cluster-admin* role.
 
 Install RHACM operator:
+
 ```
 $ oc apply --kustomize rhacm-operator/base
 ```
 
 Deploy a RHACM instance:
+
 ```
 $ oc apply --kustomize rhacm-instance/overlays/basic
+```
+
+After the RHACM instance is deployed, you can optionally configure `local-cluster`:
+
+```
+$ oc apply --kustomize rhacm-local-cluster/base
 ```
 
 Optionally, deploy Ansible Automation Platform Resource Operator aka [AWX Resource Operator](https://github.com/ansible/awx-resource-operator):
