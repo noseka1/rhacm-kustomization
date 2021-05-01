@@ -12,8 +12,6 @@ images:
     newTag: 2.3.0-DOWNSTREAM-2021-04-29-17-47-22
     # newTag: 2.3.0-DOWNSTREAM-2021-04-28-08-44-32
 
-patchesStrategicMerge:
-  - default-sa-pull-secret-patch.yaml
 resources:
   - open-cluster-management-ns.yaml
   - open-cluster-management-operatorgroup.yaml
