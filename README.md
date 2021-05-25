@@ -85,7 +85,7 @@ $ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.
 
 ## Labs
 
-* https://github.com/open-cluster-management/lab
+* https://github.com/open-cluster-management/labs
 * https://github.com/redhat-gpte-devopsautomation/rhacm-labs
 
 ## Manifest examples
