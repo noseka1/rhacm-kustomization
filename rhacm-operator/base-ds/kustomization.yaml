@@ -9,7 +9,7 @@ generatorOptions:
 images:
   - name: acm-custom-registry
     newName: quay.io:443/acm-d/acm-custom-registry
-    newTag: 2.3.0-DOWNSTREAM-2021-06-02-06-03-39
+    newTag: 2.3.0-DOWNSTREAM-2021-06-09-15-47-02
 
 resources:
   - open-cluster-management-ns.yaml
