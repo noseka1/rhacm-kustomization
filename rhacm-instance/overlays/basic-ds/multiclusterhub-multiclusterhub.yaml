@@ -7,3 +7,4 @@ metadata:
     "mch-imageRepository": "quay.io:443/acm-d"
 spec:
   availabilityConfig: Basic
+  imagePullSecret: multiclusterhub-operator-pull-secret
