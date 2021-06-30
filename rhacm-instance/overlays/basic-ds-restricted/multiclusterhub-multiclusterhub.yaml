@@ -1,0 +1,10 @@
+apiVersion: operator.open-cluster-management.io/v1
+kind: MultiClusterHub
+metadata:
+  name: multiclusterhub
+  namespace: open-cluster-management
+  annotations:
+    "mch-imageRepository": "sre-registry.demo.red-chesterfield.com:5000/rhacm2"
+spec:
+  availabilityConfig: Basic
+  imagePullSecret: multiclusterhub-operator-pull-secret
