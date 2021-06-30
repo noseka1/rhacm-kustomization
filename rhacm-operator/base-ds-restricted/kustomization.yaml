@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: open-cluster-management
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+images:
+  - name: acm-custom-registry
+    newName: sre-registry.demo.red-chesterfield.com:5000/rhacm2/acm-custom-registry
+    newTag: 2.3.0-DOWNSTREAM-2021-06-29-15-41-03
+
+resources:
+  - open-cluster-management-ns.yaml
+  - open-cluster-management-operatorgroup.yaml
+  - custom-registry-deployment.yaml
+  - custom-registry-service.yaml
+  - catalog-source.yaml
+  - advanced-cluster-management-sub.yaml
