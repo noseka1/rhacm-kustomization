@@ -9,7 +9,7 @@ generatorOptions:
 images:
   - name: acm-custom-registry
     newName: sre-registry.demo.red-chesterfield.com:5000/rhacm2/acm-custom-registry
-    newTag: 2.3.0-DOWNSTREAM-2021-06-29-05-03-27
+    newTag: 2.3.0-DOWNSTREAM-2021-07-07-23-00-09
 
 resources:
   - open-cluster-management-ns.yaml
