@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - advanced-cluster-management-sub.yaml
 - open-cluster-management-ns.yaml
-- open-cluster-management-operatorgroup.yaml
+- open-cluster-management-og.yaml
