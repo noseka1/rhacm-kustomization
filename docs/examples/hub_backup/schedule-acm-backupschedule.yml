@@ -1,0 +1,12 @@
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: BackupSchedule
+metadata:
+  name: schedule-acm
+  namespace: oadp-operator
+spec:
+  # Maximum number of backups after which old backups should be removed
+  maxBackups: 10
+  # Create a backup once a day
+  veleroSchedule: '0 0 * * *'
+  # Deletes backups after 240h from the time they were created
+  veleroTtl: 240h
