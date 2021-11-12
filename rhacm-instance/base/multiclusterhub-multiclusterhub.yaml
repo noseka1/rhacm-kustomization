@@ -4,3 +4,4 @@ metadata:
   namespace: open-cluster-management
   name: multiclusterhub
 spec:
+  enableClusterBackup: true
