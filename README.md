@@ -80,7 +80,7 @@ $ oc adm must-gather
 Collect debugging information specific to Red Hat Advanced Cluster Manager:
 
 ```
-$ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.2.0
+$ oc adm must-gather --image registry.redhat.io/rhacm2/acm-must-gather-rhel8:v2.4.0
 ```
 
 ## Labs
