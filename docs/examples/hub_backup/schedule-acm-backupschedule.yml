@@ -8,5 +8,5 @@ spec:
   maxBackups: 10
   # Create a backup once a day
   veleroSchedule: '0 0 * * *'
-  # Deletes backups after 240h from the time they were created
-  veleroTtl: 240h
+  # Deletes backups after 720h from the time they were created
+  veleroTtl: 720h
