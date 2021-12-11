@@ -20,10 +20,10 @@ Deploy a RHACM instance:
 $ oc apply --kustomize rhacm-instance/overlays/basic
 ```
 
-After the RHACM instance is deployed, you can optionally configure `local-cluster`:
+After the RHACM instance is deployed, you can optionally put `local-cluster` under GitOps management:
 
 ```
-$ oc apply --kustomize rhacm-local-cluster/base
+$ oc apply --kustomize rhacm-gitops/base
 ```
 
 Optionally, deploy Ansible Automation Platform Resource Operator aka [AWX Resource Operator](https://github.com/ansible/awx-resource-operator):
