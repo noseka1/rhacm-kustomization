@@ -7,4 +7,3 @@ resources:
 - all-openshift-clusters-placement.yaml
 - argo-acm-importer-gitopscluster.yaml
 - local-cluster-managedcluster.yaml
-#- openshift-gitops-ns.yaml
