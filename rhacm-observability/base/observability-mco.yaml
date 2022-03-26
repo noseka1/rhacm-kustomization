@@ -4,7 +4,7 @@ metadata:
   name: observability
 spec:
   availabilityConfig: Basic # Available values are High or Basic
-  imagePullPolicy: Always
+  imagePullPolicy: IfNotPresent
   imagePullSecret: pull-secret
   observabilityAddonSpec: # The ObservabilityAddonSpec defines the global settings for all managed clusters which have observability add-on enabled
     enableMetrics: true # EnableMetrics indicates the observability addon push metrics to hub server
